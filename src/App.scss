@@ -1,0 +1,270 @@
+@import "../src//scss/_color";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+        font-family: 'Spartan', sans-serif;
+         font-size: 11px;
+}
+main{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: White;
+    -webkit-box-shadow: -1px 3px 20px 3px rgba(0,0,0,0.13);
+-moz-box-shadow: -1px 3px 20px 3px rgba(0,0,0,0.13);
+box-shadow: -1px 3px 20px 3px rgba(0,0,0,0.13);
+    .challenge2__container{
+        
+        margin-left: auto;
+        margin-right:auto;
+        max-width:  1200px;
+        min-height: 70vh;
+        background-color: $White;
+        display: grid;
+         place-items: center;
+        .content__container{
+            max-width: 950px;
+            height: 460px;
+            background-color: $White;
+        }
+        .top__content{
+            display:flex;
+            justify-content:space-between;
+            max-width: 928px;
+            height: 210px;
+            .left__content{
+                            max-width: 420px;
+                            height: 210px;
+                            .h1{
+                                margin-bottom: 8px;
+                                width: 350px;
+                                font-size:35px;
+                                color:$Very__Dark__Magenta;
+                                font-weight: 700;
+                            }
+                            .p1{
+                                text-align:left;
+                                font-size:13px;
+                                color:$Dark__Grayish__Magenta;
+                                font-weight: 400;
+                                 max-width: 420px;
+                            }
+            }
+            .right__content{
+                max-width: 406px;
+                height: 210px;
+                display: grid;
+                place-items: center;
+              
+                .article1{
+                    display:flex;
+                    align-items: center;
+                    justify-content:flex-start;
+                    width: 350px;
+                    height: 50px;
+                    background-color:$Light__Grayish__Magenta;
+                    border-radius: 8px;
+                    &:first-child{
+                                               margin-right:50px;
+
+                    }
+                     &:last-child{
+                       margin-left:50px;
+                                 }
+                                .star{
+                                     margin-left: 20px;
+                                     margin-right: 20px;
+                                   
+                                    
+                                     img{
+                                        padding:0 2px;
+
+                                     }
+                                 }
+                                 .p2{
+                                        color: $Very__Dark__Magenta;
+                                         font-weight: 700;
+                                    }
+                                
+                }
+            }
+        }
+    }
+    .down_container{
+                margin-top: 30px;
+                 max-width: 930px;
+                 height: 220px;
+
+                 .artical__down__container{
+                       display:flex;
+                       flex-wrap: wrap;
+                       justify-content:center;
+                       align-items: center;
+                    
+                    #card2{
+                         margin-top:15px;
+                    }
+                    #card3{
+                        margin-top:40px;
+                    }
+                     .card{
+                         overflow: hidden;
+                         width: 300px;
+                        height: 200px;
+                        background-color:$Very__Dark__Magenta;
+                        border-radius:8px;
+                        display: grid;
+                        place-items: center;
+                        &:not(:last-child){
+                            margin-right: 14px;
+                        }
+                        .card__header{
+                            display:flex;
+                            justify-content:flex-start;
+                            align-items: center;
+                            width: 250px;
+                            .card__header__text{
+                                display:flex;
+                                flex-direction: column;
+                                margin-left: 20px;
+                                margin-top: 10px;
+                            }
+                            img{
+                                height: 35px;
+                                border-radius: 50%;
+                                margin-top: 10px;
+                            }
+                            p{
+                                color: #fff;
+                                font: weight 700px;
+                                font-size: 15px;
+                            }
+                            span{
+                                color: $Soft__Pink;
+                                 font: weight 700px;
+                                font-size: 15px;
+                            }
+                        }
+                     }
+                     .card__text{
+                         text-align: left;
+                         margin-bottom: 20px;
+                         width: 260px;
+                         line-height: 20px;
+                         p{
+                             color: #fff;
+                             font-weight: 500;
+                         }
+                     }
+                 }
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .challenge2__container{
+        height:200vh !important;
+        .content__container{
+                    height:180vh !important;
+
+        }
+    }
+            .top__content{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                height: 75vh !important;
+                .left__content{
+                    .h1{
+                        text-align: center;
+                        width: 320px !important; 
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 20px !important;
+
+                    }
+                    .p1{
+                        text-align:center !important;
+                        font-size: 17px !important;
+                         max-width: 600px !important; 
+                    }
+                }
+                .right__content{
+                    height: 250px !important;
+                    margin-top: 50px !important;
+                        .article1{
+                            flex-direction: column !important;
+                            align-items: center !important;
+                            justify-content: center !important;
+                            width: 400px !important;
+                            height: 70px !important;
+                                  &:first-child{
+                                margin-right:0px !important;
+                                        }
+                                   &:last-child{
+                                        margin-left:0px !important;
+                                          }
+                                          .star{
+                                              margin-bottom:5px !important;
+                                          }
+                        }
+                }
+            }
+            .down_container{
+                margin-top: 50px !important;
+                margin-left: 15px !important;
+                    #card2{
+                         margin-top:15px;
+                    }
+                    #card3{
+                        margin-top:15px !important;
+                        margin-right: 15px !important;
+                    }
+                    .card{
+                        width: 400px !important;
+                        height: 200px !important;
+
+                    }
+            }
+}
+
+@media screen and (max-width:440px){
+    .left__content{
+                    .h1{
+                        margin-left: auto !important;
+                        margin-right: auto !important;
+                        font-size: 30px !important;
+
+                    }
+                    .p1{
+                        text-align:center !important;
+                        font-size: 17px !important;
+                        width: 300px !important;
+                          margin-left: auto !important;
+                        margin-right: auto !important;
+                    }
+                }
+                .down_container{
+                margin-top: 50px !important;
+                margin-left: 15px !important;
+                    #card2{
+                         margin-top:15px;
+                    }
+                    #card3{
+                        margin-top:15px !important;
+                        margin-right: 15px !important;
+                    }
+                    .card{
+                        width: 300px !important;
+                        height: 200px !important;
+                    }
+            }
+}
